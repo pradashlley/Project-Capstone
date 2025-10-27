@@ -49,6 +49,10 @@ In the dataset, we can identify that more than 55% of individuals do not have he
 
 We observe that the majority of people in this dataset are of sex 1, exceeding more than 175 units. (Graph 4) This variable will be important in determining which gender is most affected by the disease. In this regard, we can see that people of sex 1 are the most affected.
 ![Distribution](Images/im5.png)
+![Distribution](Images/im11.png)
+
+
+- Coorelation between the numerical features
 ![Distribution](Images/im6.png)
 
 ## Methodology and Modeling
