@@ -53,6 +53,7 @@ We observe that the majority of people in this dataset are of sex 1, exceeding m
 
 
 - Coorelation between the numerical features
+The correlation matrix shows the linear relationships between five numerical variables in the dataset. The most notable correlations are as follows: The variable (age) has a moderate negative correlation with (max-heart-rate) (-0.40), suggesting that older individuals tend to have a lower maximum heart rate. Additionally, the maximum heart rate is moderately and negatively correlated with the variable oldpeak (-0.35), indicating that the higher the maximum heart rate, the less pronounced the ST segment depression is after exercise. Finally, age is slightly positively correlated with resting blood pressure (0.27), and resting blood pressure is also slightly correlated with oldpeak (0.22).
 ![Distribution](Images/im6.png)
 
 - Others Visualisation
@@ -107,3 +108,14 @@ The creation of a national data collection system (ages, blood pressure, cholest
 ## Conlusion and Next Steps
 This project achieved its objective of developing a predictive model for the presence or absence of heart disease in individuals, with the aim of assisting primary care centers and reducing deaths related to cardiovascular diseases. The evaluation results showed that Logistic Regression outperforms Random Forest on all key metrics. The Logistic Regression model reached an Accuracy of 90% and an AUC ROC score of 0.9364, demonstrating its superior ability to distinguish between classes. More importantly for a health-related issue, its Recall for Class 1 (disease) is 94%, indicating excellent performance in correctly identifying disease cases. Consequently, the Logistic Regression model was selected for predicting the heart-disease variable.
 ## Repo Structure
+├── data           
+├── Images
+├── Notebooks
+├── .gitignore 
+├── Capstone Rapport Final.pdf
+├── Capstone Project 261025.pdf
+├── Final-checkpoint.ipynb
+├── LICENSE
+└── README.md                
+
+
