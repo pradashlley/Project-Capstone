@@ -1,7 +1,6 @@
-# 
+### Predicting Heart Disease
 ![Distribution](Images/im1.jpg)
 
-# Predicting Heart Disease
 ## Overview
 For this project, We will use data analysisvisual,ization to generate insights and we will devlop a model that can determine if we can class people with absence or presence of heart disease.
 
@@ -34,15 +33,31 @@ Target
 
 ## Analysis and Results/Recommendations
 First of all, we ensured the existence of missing data and a visual representation of the first 10 rows of the database (Table 1). It should be noted, however, that treatments were applied to the target variable by converting the absence of diseases to 0 and the presence of a disease to 1.
+![Distribution](Images/im2.png)
+
+- Age distribution
+The individuals in our dataset range in age from 29 to 77 years old. It is observed that the largest number of individuals are in their sixties.
+![Distribution](Images/im3.png)
+
+- Distribution of sick individuals
+In the dataset, we can identify that more than 55% of individuals do not have heart diseases
+![Distribution](Images/im4.png)
+
+- Distribution of individuals by sex
+We observe that the majority of people in this dataset are of sex 1, exceeding more than 175 units. (Graph 4) This variable will be important in determining which gender is most affected by the disease. In this regard, we can see that people of sex 1 are the most affected.
+![Distribution](Images/im5.png)
+![Distribution](Images/im6.png)
 
 
-![Distribution](Images/imgp11.png)
+![Distribution](Images/im7.png)
 
-![Distribution](Images/imgp12.png)
+![Distribution](Images/im8.png)
 
-![Distribution](Images/imgp13.png)
+![Distribution](Images/im9.png)
 
-![Distribution](Images/imgp14.png)
+![Distribution](Images/im10.png)
+
+![Distribution](Images/im11.png)
 
 Recommendations 
 1. Implement awareness programs on nutritional prevention and lifestyle habits
