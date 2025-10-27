@@ -1,5 +1,5 @@
 # Predicting Heart Disease
-                                                          ![Distribution](Images/im1.jpg)
+![Distribution](Images/im1.jpg)
 
 ## Overview
 For this project, We will use data analysisvisual,ization to generate insights and we will devlop a model that can determine if we can class people with absence or presence of heart disease.
