@@ -55,6 +55,9 @@ We observe that the majority of people in this dataset are of sex 1, exceeding m
 - Coorelation between the numerical features
 ![Distribution](Images/im6.png)
 
+- Others Visualisation
+![Distribution](Images/im7.png)
+
 ## Methodology and Modeling
 The goal of this project is to predict the heart disease variable based on the other variables in the dataset. To do this, we will use several models to predict this variable. After making predictions, we will need to check the most relevant metrics (especially recall) to decide which model to choose. 
 
@@ -76,17 +79,17 @@ False Positives (FP): 6 (Class 0 was incorrectly predicted for 6 samples of Clas
 False Negatives (FN): 2 (Class 1 was incorrectly predicted for 2 samples of Class 0).  
 
 The model demonstrates very good overall performance: Accuracy of 90% and AUC Score of 0.9364. It is particularly precise in identifying Class 0 (0.95) and shows excellent recall for Class 1 (0.94), meaning it is highly effective in correctly identifying cases of the disease.
-![Distribution](Images/im7.png)
+![Distribution](Images/im8.png)
 
 
 The second model evaluated is Random Forest. The confusion matrix shows the distribution of predictions over the 81 test samples. Since Random Forest is sensitive to hyperparameters, care was taken to optimize the model to improve its overall performance.True Positives (TP): 31 (Class 1 was correctly predicted 31 times).True Negatives (TN): 38 (Class 0 was correctly predicted 38 times).False Positives (FP): 7 (Class 0 was incorrectly predicted for 7 samples of Class 1).False Negatives (FN): 5 (Class 1 was incorrectly predicted for 5 samples of Class 0).
-![Distribution](Images/im8.png)
 
 ![Distribution](Images/im9.png)
 
+- 5 major characteristics affecting heart diseases
+The feature importance analysis, based on the selected Logistic Regression model, highlights the most critical factors for predicting heart disease. The factor most strongly associated with the presence of the disease is chest pain type 4 (chest-pain_4.0), followed by the presence of 3 major affected vessels (major-vessels_3.0). Conversely, the near absence of major vessel involvement (major-vessels_0.0) is the factor most strongly correlated with the absence of the disease, acting as a powerful protective factor. Regarding gender, individuals of sex 1 (sex_1.0) have an increased probability of disease, while those of sex 0 (sex_0.0) have a decreased probability. In summary, physical manifestations (chest pain and number of affected vessels) are the most influential predictors for determining the risk of heart disease.
 ![Distribution](Images/im10.png)
 
-![Distribution](Images/im11.png)
 
 Recommendations 
 1. Implement awareness programs on nutritional prevention and lifestyle habits
