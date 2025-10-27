@@ -1,5 +1,5 @@
-### Predicting Heart Disease
-![Distribution](Images/im1.jpg)
+# Predicting Heart Disease
+                                                          ![Distribution](Images/im1.jpg)
 
 ## Overview
 For this project, We will use data analysisvisual,ization to generate insights and we will devlop a model that can determine if we can class people with absence or presence of heart disease.
@@ -36,21 +36,46 @@ First of all, we ensured the existence of missing data and a visual representati
 ![Distribution](Images/im2.png)
 
 - Age distribution
+
 The individuals in our dataset range in age from 29 to 77 years old. It is observed that the largest number of individuals are in their sixties.
 ![Distribution](Images/im3.png)
 
 - Distribution of sick individuals
+
 In the dataset, we can identify that more than 55% of individuals do not have heart diseases
 ![Distribution](Images/im4.png)
 
 - Distribution of individuals by sex
+
 We observe that the majority of people in this dataset are of sex 1, exceeding more than 175 units. (Graph 4) This variable will be important in determining which gender is most affected by the disease. In this regard, we can see that people of sex 1 are the most affected.
 ![Distribution](Images/im5.png)
 ![Distribution](Images/im6.png)
 
+## Methodology and Modeling
+The goal of this project is to predict the heart disease variable based on the other variables in the dataset. To do this, we will use several models to predict this variable. After making predictions, we will need to check the most relevant metrics (especially recall) to decide which model to choose. 
 
+The two proposed models are Logistic Regression and Random Forest.
+
+### Model 1 Architecture (Logistic Regression)
+
+First, our data is divided into two classes: numerical data and categorical data. We used the variables categorical_features and numerical_features to store the names of the different variables in lists.For the transformation and processing of all this data, a pipeline was used. Two components are included in our preprocessor: a StandardScaler for normalizing our numerical data and a OneHotEncoder for transforming categorical data for further processing.
+
+### Model 2 Architecture (Random Forest)
+
+Like Logistic Regression, the Random Forest model uses the available data in both numerical and categorical formats
+
+## Résultats et Évaluation 
+The review of the various results associated with the different models is as follows: For the 1st Model (Logistic Regression), the confusion matrix shows the distribution of predictions on the 81 test samples.  
+True Positives (TP): 34 (Class 1 was correctly predicted 34 times).  
+True Negatives (TN): 39 (Class 0 was correctly predicted 39 times).  
+False Positives (FP): 6 (Class 0 was incorrectly predicted for 6 samples of Class 1).  
+False Negatives (FN): 2 (Class 1 was incorrectly predicted for 2 samples of Class 0).  
+
+The model demonstrates very good overall performance: Accuracy of 90% and AUC Score of 0.9364. It is particularly precise in identifying Class 0 (0.95) and shows excellent recall for Class 1 (0.94), meaning it is highly effective in correctly identifying cases of the disease.
 ![Distribution](Images/im7.png)
 
+
+The second model evaluated is Random Forest. The confusion matrix shows the distribution of predictions over the 81 test samples. Since Random Forest is sensitive to hyperparameters, care was taken to optimize the model to improve its overall performance.True Positives (TP): 31 (Class 1 was correctly predicted 31 times).True Negatives (TN): 38 (Class 0 was correctly predicted 38 times).False Positives (FP): 7 (Class 0 was incorrectly predicted for 7 samples of Class 1).False Negatives (FN): 5 (Class 1 was incorrectly predicted for 5 samples of Class 0).
 ![Distribution](Images/im8.png)
 
 ![Distribution](Images/im9.png)
